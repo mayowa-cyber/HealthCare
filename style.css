@@ -1,0 +1,192 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('anchor_university__anchoruni_.png');
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(15px);
+    background-color: rgba(165, 112, 255, 0.15);
+    color: #1b0404;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+}
+
+.logo img {
+    height: 66px;
+    width: auto;
+}
+
+.navbar {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #4C104A;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    background-color: #4C104A;
+    color: white;
+    outline: none;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #4C104A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #33022f;
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #4C104A;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4129a1;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+    background-color: #2e1c7e;
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-buttons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 480px) {
+.search-form {
+    flex-direction: column;
+}
+
+.search-form input[type="text"],
+
+.search-form button {
+    width: 100%;
+}
+}
+
+.conditions-box{
+    position: absolute;
+}
+
+.conditions-box {
+    top: 190px;
+    left: 20%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+}
+
+.conditions-box:hover{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color:  #4129a1;
+}
